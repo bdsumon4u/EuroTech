@@ -62,7 +62,7 @@
                                             @endif
                                         </li>
                                         @else
-                                        <li class="stitle">Contact for Price</li>
+                                        <li class="contact-price">Contact for Price</li>
                                         @endif
 										<li>Availability:
                                             @if(! $product->should_track)
@@ -82,7 +82,7 @@
 				</li>
 			</ul>
 		</li>
-		
+
 		<li class="clear_less_height">&nbsp;</li>
 	</ul>
 </div>

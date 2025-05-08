@@ -80,7 +80,7 @@
                     <div class="product__info">
                         <h1 class="product__name">{{ $product->name }}</h1>
                         <div class="w-100 mb-2 border-top pt-2">Model: <strong>{{ $product->sku }}</strong></div>
-                        
+
                         <div class="product__footer mt-0">
                             <div class="product__tags tags">
                                 @if($product->brand)
@@ -108,7 +108,7 @@
                             @endif
                         </div>
                         @else
-                        <h6>Contact for Price</h6>
+                        <span class="contact-price">Contact for Price</span>
                         @endif
                         <ul class="product__meta">
                             <li class="product__meta-availability w-100 mb-2">

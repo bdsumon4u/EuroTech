@@ -19,7 +19,9 @@
 					<ul class="top_white_border">
                         @foreach (\App\Category::all() as $category)
 						<li>
-                            <a class='main_menu' href='{{route('categories.products',$category)}}' title='{{$category->name}}'>{{$category->name}}</a>
+                            <a class='main_menu' href='{{route('categories.products',$category)}}' title='{{$category->name}}'>
+                                <i class="fas fa-chevron-circle-right mr-2"></i>{{$category->name}}
+                            </a>
                         </li>
                         @endforeach
                     </ul>
@@ -65,7 +67,7 @@
                                             @endif
                                         </li>
                                         @else
-                                        <li class="stitle">Contact for Price</li>
+                                        <li class="contact-price">Contact for Price</li>
                                         @endif
 										<li>Availability:
                                             @if(! $product->should_track)
@@ -74,7 +76,9 @@
                                                 <span class="text-{{ $product->stock_count ? 'success' : 'danger' }}">{{ $product->stock_count }} In Stock</span>
                                             @endif
                                         </li>
-										<li><a class="bblue" href="{{route('products.show',$product)}}" title="{{$product->name}}">Show Deatils</a></li>
+										<li><a class="bblue" href="{{route('products.show',$product)}}" title="{{$product->name}}">
+                                            <i class="fas fa-arrow-right mr-2"></i> Show Details
+                                        </a></li>
 									</ul>
 								</li>
 							</ul>
@@ -85,7 +89,7 @@
 				</li>
 			</ul>
 		</li>
-		
+
 		<li class="clear_less_height">&nbsp;</li>
 	</ul>
 </div>

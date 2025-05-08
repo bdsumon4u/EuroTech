@@ -15,7 +15,7 @@
                     </svg>
                 </span>
             </a>
-            <div class="nav-links__submenu nav-links__submenu--type--menu" style="background: white; width: 255px;">
+            <div class="nav-links__submenu nav-links__submenu--type--menu" style="background: #326892; width: 255px;">
                 <ul class="departments__links">
                     @foreach($categories as $category)
                         <li class="departments__item @if($category->childrens->isNotEmpty()) departments__item--menu @endif">
